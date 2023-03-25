@@ -1,0 +1,17 @@
+html{
+   font-family: 'Bona Nova', serif;
+}
+
+
+.container{
+    width: 100%;
+    margin: auto;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 80%;
+    margin: 1% 5% 1% 5%;
+}

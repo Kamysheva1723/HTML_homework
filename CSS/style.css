@@ -24,7 +24,8 @@ header h3{
     width: 18%;
     margin: 0 0 0 0;
     line-height: 3rem;
-    padding-left: 1rem;
+    padding-left: 1%;
+    padding-right: 1%;
     background-color: #4d4d4d;
     color: whitesmoke;
     font-style: italic;
@@ -77,7 +78,7 @@ img{
 #home{
     display: block;
     width: 90%;
-    padding-top: 10rem;
+    padding-top: 5%;
     margin: auto;
     padding-bottom: 20rem;
     vertical-align: middle;
@@ -118,8 +119,9 @@ img{
 #products h1{
     font-size: xxx-large;
     text-align: left;
-    padding-top: 2rem;
-    padding-left: 2rem;
+    padding-top: 6%;
+    padding-left: 6%;
+    padding-bottom: 1rem;
     margin-top: 0;
     margin-bottom: 0;
     width: 100%;
@@ -131,6 +133,10 @@ img{
     margin: auto;
     text-align: justify;
 
+}
+
+#products figcaption{
+    padding: 1% 1% 1% 1%;
 }
 
 #products img{
@@ -205,7 +211,6 @@ img{
     display: flex;
     width: 90%;
     vertical-align: top;
-    margin-bottom: 10rem;
     margin: 5% 5% 5% 5%;
 }
 
@@ -219,12 +224,17 @@ img{
     .container{
         width: 90%;
     }
+
     header h3{
         display: inline-block;
     }
     #navbar{
         width: 82%;
         justify-content: right;
+    }
+
+    #home {
+        padding-top: 30%;
     }
 
     #product_list article p{

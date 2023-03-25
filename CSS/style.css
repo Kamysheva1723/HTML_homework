@@ -181,6 +181,10 @@ img{
     font-size: xx-small;
 }
 
+#product_list article figure img{
+    filter: none;
+}
+
 /*contacts page*/
 
 #contacts{

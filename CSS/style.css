@@ -1,15 +1,14 @@
+
 html{
    font-family: 'Bona Nova', serif;
-
-
 }
+
 .container{
-    width: 90%;
+    width: 100%;
     margin: auto;
     background-color: #f4f4f4;
     overflow: hidden;
-
-
+    flex-wrap: wrap;
 }
 
 header{
@@ -19,9 +18,8 @@ header{
     margin: auto;
 }
 
-
 header h3{
-
+    display: none;
     width: 18%;
     margin: 0 0 0 0;
     line-height: 3rem;
@@ -31,19 +29,31 @@ header h3{
     font-style: italic;
     font-size: small;
     text-align: center;
- }
+    white-space: nowrap;
+}
 
+main{
+    width: 90%;
+    background: url("../grunge-wall-texture.jpg") no-repeat;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+img{
+    filter: grayscale(90%);
+}
 
 #navbar {
     display: flex;
     list-style: none;
-    justify-content: right;
-    width: 82%;
+    justify-content: center;
+    width: 100%;
     margin: 0;
     padding: 0;
-
 }
+
 #navbar li a{
     display: inline-block;
     background-color: dimgrey;
@@ -53,104 +63,24 @@ header h3{
     height: 3rem;
     text-align: center;
     line-height: 3rem;
-    width: 8rem;
     margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
 #navbar li a:hover{
     background-color: #999999;
-
-}
-#product_list article{
-
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 22%;
-    background-color: whitesmoke;
-    padding: 1rem 1rem 1rem 1rem;
-
-}
-#product_list article h3{
-    text-align: left;
-}
-#product_list{
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-    }
-
-
-
-
-
-main{
-    width: 90%;
-    background: url("../grunge-wall-texture.jpg") no-repeat;
-    background-size: cover;
-    margin: auto;
-
 }
 
-/*section{
-    text-align: center;
-
-
-}*/
-#products h1{
-    font-size: xx-large;
-    text-align: left;
-    padding-left: 3rem;
-    padding-top: 2rem;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-#products figure{
-    caption-side: bottom;
-    text-align: justify;
-}
-#products img{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-#product_list article figure{
-    margin: 0;
-
-}
-#product_list article figcaption{
-    font-size: small;
-    font-style: italic;
-    color: #999999;
-
-}
-
-
-#product_list article p{
-    text-align: left;
-    font-size: medium;
-}
-
-
-
-
-img{
-    filter: grayscale(90%);
-
-}
-
+/*home page*/
 #home{
     display: block;
     width: 90%;
     padding-top: 10rem;
     margin: auto;
     padding-bottom: 20rem;
+    vertical-align: middle;
 
-}
-#home figure{
-    width: 90%;
-    margin: auto;
-}
-#home figure img{
-    width: 100%;
 }
 
 #home h1{
@@ -158,43 +88,179 @@ img{
     margin-bottom: 1rem;
     text-align: center;
 }
+
+#home figure{
+    width: 90%;
+    margin: auto;
+}
+
+#home figure img{
+    width: 100%;
+}
+
 #home p{
     width: 90%;
     text-align: center;
     margin: auto;
     padding-top: 1rem;
+}
+
+/*products page*/
+#products{
+    display: block;
+    width: 90%;
+    padding-bottom: 10rem;
+    margin: auto;
+    vertical-align: middle;
+}
+
+#products h1{
+    font-size: xxx-large;
+    text-align: left;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#products figure{
+    caption-side: bottom;
+    width: 90%;
+    margin: auto;
+    text-align: justify;
 
 }
+
+#products img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#product_list{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+
+#product_list article{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 22%;
+    background-color: whitesmoke;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 3rem;
+}
+
+#product_list article h3{
+    text-align: left;
+}
+
+#product_list article figure{
+    margin: 0;
+}
+
+#product_list article figcaption{
+    font-size: small;
+    font-style: italic;
+    color: #999999;
+
+}
+
+#product_list article p{
+    text-align: left;
+    font-size: xx-small;
+}
+
+/*contacts page*/
+
 #contacts{
     display: inline;
+    margin: auto;
+    width: 100%;
 }
 
 #contacts h1{
     display: inline-block;
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 1rem;
     vertical-align: top;
     padding-left: 2rem;
     padding-top: 2rem;
-
 }
+
 #contacts p{
     display: inline-block;
-    width: 30%;
+    width: 100%;
     margin: 0;
     font-size: medium;
     padding-left: 2rem;
     padding-top: 2rem;
 }
-#contacts figure{
-    display: inline-block;
-    width: 60%;
-    margin: 0;
-    vertical-align: top;
-    margin-bottom: 20rem;
-}
-#contacts figure img{
 
-    width: 100%
+#contacts figure{
+    display: flex;
+    width: 90%;
+    vertical-align: top;
+    margin-bottom: 10rem;
+    margin: 5% 5% 5% 5%;
 }
+
+#contacts figure img{
+    display: flex;
+    width: 100%;
+
+}
+
+@media only screen and (min-width: 769px){
+    .container{
+        width: 90%;
+    }
+    header h3{
+        display: inline-block;
+    }
+    #navbar{
+        width: 82%;
+        justify-content: right;
+    }
+
+    #product_list article p{
+       font-size: medium;
+    }
+
+    #contacts{
+         display: inline;
+    }
+
+    #contacts p {
+        width: 30%;
+    }
+
+    #contacts figure {
+        width: 60%;
+        display: inline-block;
+        margin: 0 0 10rem 0;
+    }
+
+    #contacts h1{
+        margin-top: 10rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
